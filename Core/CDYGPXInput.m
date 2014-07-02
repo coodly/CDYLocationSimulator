@@ -49,6 +49,8 @@
 
         NSMutableArray *locations = [NSMutableArray array];
 
+        NSDate *lastPointTime = nil;
+        
         NSArray *tracks = [document.rootElement childrenWithTag:@"trk"];
         for (ONOXMLElement *trackElement in tracks) {
             NSArray *segments = [trackElement childrenWithTag:@"trkseg"];
@@ -65,13 +67,17 @@
                     NSNumber *speed = @(speedElement.stringValue.doubleValue);
                     NSNumber *course = @(courseElement.stringValue.doubleValue);
 
+                    NSTimeInterval fromLastPoint = lastPointTime ? [date timeIntervalSinceDate:lastPointTime] : 1;
+                    lastPointTime = date;
+                    
                     CDYLocation *location = [[CDYLocation alloc] initWithCoordinate:CLLocationCoordinate2DMake(latitude.doubleValue, longitude.doubleValue)
                                                                            altitude:0
                                                                  horizontalAccuracy:5
                                                                    verticalAccuracy:0
                                                                              course:course.doubleValue
                                                                               speed:speed.doubleValue
-                                                                          timestamp:date];
+                                                                          timestamp:nil];
+                    [location setTimeToNextLocation:fromLastPoint];
                     [locations addObject:location];
                 }
             }

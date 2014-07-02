@@ -21,6 +21,8 @@
 
 @interface CDYLocationManager : CLLocationManager
 
+@property (nonatomic, assign) double playbackSpeed;
+
 - (instancetype)initWithInput:(CDYLocationsInput *)input;
 
 - (void)startUpdatingLocation;

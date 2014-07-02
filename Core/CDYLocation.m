@@ -18,4 +18,8 @@
 
 @implementation CDYLocation
 
+- (NSDate *)timestamp {
+    return [NSDate date];
+}
+
 @end

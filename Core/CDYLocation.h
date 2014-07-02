@@ -18,4 +18,6 @@
 
 @interface CDYLocation : CLLocation
 
+@property (nonatomic, assign) NSTimeInterval timeToNextLocation;
+
 @end

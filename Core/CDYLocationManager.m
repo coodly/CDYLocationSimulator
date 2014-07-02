@@ -16,6 +16,7 @@
 
 #import "CDYLocationManager.h"
 #import "CDYLocationsInput.h"
+#import "CDYLocation.h"
 
 @interface CDYLocationManager ()
 
@@ -31,6 +32,7 @@
     self = [super init];
     if (self) {
         _locationsInput = input;
+        _playbackSpeed = 1;
     }
     return self;
 }
@@ -66,7 +68,7 @@
 
     CDYLocation *location = [self.locationsInput nextLocation];
     [self.delegate locationManager:self didUpdateLocations:@[location]];
-    CDYLocationDelayedExecution(1, ^{
+    CDYLocationDelayedExecution(location.timeToNextLocation / self.playbackSpeed, ^{
         [self pushNextLocation];
     });
 }
