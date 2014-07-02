@@ -20,6 +20,12 @@
 		EA62C3A619642A230051708C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA62C3A419642A230051708C /* InfoPlist.strings */; };
 		EA62C3A819642A230051708C /* CDYLocationSimulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62C3A719642A230051708C /* CDYLocationSimulatorTests.m */; };
 		EA62C3B219642CB60051708C /* CDYLocationSimulator.podspec in Resources */ = {isa = PBXBuildFile; fileRef = EA62C3B119642CB60051708C /* CDYLocationSimulator.podspec */; };
+		EA62C3B81964307B0051708C /* CDYLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62C3B71964307B0051708C /* CDYLocationManager.m */; };
+		EA62C3BA196430890051708C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62C3B9196430890051708C /* CoreLocation.framework */; };
+		EA62C3BD196432FD0051708C /* CDYLocationsInput.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62C3BC196432FD0051708C /* CDYLocationsInput.m */; };
+		EA62C3C01964339B0051708C /* CDYGPXInput.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62C3BF1964339B0051708C /* CDYGPXInput.m */; };
+		EA62C3C3196435EE0051708C /* CDYLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62C3C2196435EE0051708C /* CDYLocation.m */; };
+		EA62C3C6196436C90051708C /* CDYLocationSimulatorConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62C3C5196436C90051708C /* CDYLocationSimulatorConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,17 @@
 		EA62C3A519642A230051708C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA62C3A719642A230051708C /* CDYLocationSimulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDYLocationSimulatorTests.m; sourceTree = "<group>"; };
 		EA62C3B119642CB60051708C /* CDYLocationSimulator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CDYLocationSimulator.podspec; sourceTree = "<group>"; };
+		EA62C3B61964307B0051708C /* CDYLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDYLocationManager.h; sourceTree = "<group>"; };
+		EA62C3B71964307B0051708C /* CDYLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDYLocationManager.m; sourceTree = "<group>"; };
+		EA62C3B9196430890051708C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EA62C3BB196432FD0051708C /* CDYLocationsInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDYLocationsInput.h; sourceTree = "<group>"; };
+		EA62C3BC196432FD0051708C /* CDYLocationsInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDYLocationsInput.m; sourceTree = "<group>"; };
+		EA62C3BE1964339B0051708C /* CDYGPXInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDYGPXInput.h; sourceTree = "<group>"; };
+		EA62C3BF1964339B0051708C /* CDYGPXInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDYGPXInput.m; sourceTree = "<group>"; };
+		EA62C3C1196435EE0051708C /* CDYLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDYLocation.h; sourceTree = "<group>"; };
+		EA62C3C2196435EE0051708C /* CDYLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDYLocation.m; sourceTree = "<group>"; };
+		EA62C3C4196436C90051708C /* CDYLocationSimulatorConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDYLocationSimulatorConstants.h; sourceTree = "<group>"; };
+		EA62C3C5196436C90051708C /* CDYLocationSimulatorConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDYLocationSimulatorConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA62C3BA196430890051708C /* CoreLocation.framework in Frameworks */,
 				EA62C38519642A230051708C /* CoreGraphics.framework in Frameworks */,
 				EA62C38719642A230051708C /* UIKit.framework in Frameworks */,
 				EA62C38319642A230051708C /* Foundation.framework in Frameworks */,
@@ -81,7 +99,6 @@
 			children = (
 				EA62C3B119642CB60051708C /* CDYLocationSimulator.podspec */,
 				EA62C3B319642D160051708C /* Core */,
-				EA62C3B519642F470051708C /* Input */,
 				EA62C38819642A230051708C /* CDYLocationSimulator */,
 				EA62C3A119642A230051708C /* CDYLocationSimulatorTests */,
 				EA62C38119642A220051708C /* Frameworks */,
@@ -101,6 +118,7 @@
 		EA62C38119642A220051708C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA62C3B9196430890051708C /* CoreLocation.framework */,
 				EA62C38219642A220051708C /* Foundation.framework */,
 				EA62C38419642A230051708C /* CoreGraphics.framework */,
 				EA62C38619642A230051708C /* UIKit.framework */,
@@ -152,15 +170,18 @@
 		EA62C3B319642D160051708C /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				EA62C3BE1964339B0051708C /* CDYGPXInput.h */,
+				EA62C3BF1964339B0051708C /* CDYGPXInput.m */,
+				EA62C3C1196435EE0051708C /* CDYLocation.h */,
+				EA62C3C2196435EE0051708C /* CDYLocation.m */,
+				EA62C3B61964307B0051708C /* CDYLocationManager.h */,
+				EA62C3B71964307B0051708C /* CDYLocationManager.m */,
+				EA62C3C4196436C90051708C /* CDYLocationSimulatorConstants.h */,
+				EA62C3C5196436C90051708C /* CDYLocationSimulatorConstants.m */,
+				EA62C3BB196432FD0051708C /* CDYLocationsInput.h */,
+				EA62C3BC196432FD0051708C /* CDYLocationsInput.m */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		EA62C3B519642F470051708C /* Input */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Input;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +282,11 @@
 			files = (
 				EA62C39319642A230051708C /* AppDelegate.m in Sources */,
 				EA62C38F19642A230051708C /* main.m in Sources */,
+				EA62C3BD196432FD0051708C /* CDYLocationsInput.m in Sources */,
+				EA62C3C01964339B0051708C /* CDYGPXInput.m in Sources */,
+				EA62C3B81964307B0051708C /* CDYLocationManager.m in Sources */,
+				EA62C3C3196435EE0051708C /* CDYLocation.m in Sources */,
+				EA62C3C6196436C90051708C /* CDYLocationSimulatorConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
