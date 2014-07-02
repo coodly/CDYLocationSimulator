@@ -19,6 +19,7 @@
 		EA62C39E19642A230051708C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62C38619642A230051708C /* UIKit.framework */; };
 		EA62C3A619642A230051708C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA62C3A419642A230051708C /* InfoPlist.strings */; };
 		EA62C3A819642A230051708C /* CDYLocationSimulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62C3A719642A230051708C /* CDYLocationSimulatorTests.m */; };
+		EA62C3B219642CB60051708C /* CDYLocationSimulator.podspec in Resources */ = {isa = PBXBuildFile; fileRef = EA62C3B119642CB60051708C /* CDYLocationSimulator.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		EA62C3A319642A230051708C /* CDYLocationSimulatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CDYLocationSimulatorTests-Info.plist"; sourceTree = "<group>"; };
 		EA62C3A519642A230051708C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA62C3A719642A230051708C /* CDYLocationSimulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDYLocationSimulatorTests.m; sourceTree = "<group>"; };
+		EA62C3B119642CB60051708C /* CDYLocationSimulator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CDYLocationSimulator.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,9 @@
 		EA62C37619642A220051708C = {
 			isa = PBXGroup;
 			children = (
+				EA62C3B119642CB60051708C /* CDYLocationSimulator.podspec */,
+				EA62C3B319642D160051708C /* Core */,
+				EA62C3B519642F470051708C /* Input */,
 				EA62C38819642A230051708C /* CDYLocationSimulator */,
 				EA62C3A119642A230051708C /* CDYLocationSimulatorTests */,
 				EA62C38119642A220051708C /* Frameworks */,
@@ -142,6 +147,20 @@
 				EA62C3A419642A230051708C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA62C3B319642D160051708C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EA62C3B519642F470051708C /* Input */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Input;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA62C38D19642A230051708C /* InfoPlist.strings in Resources */,
+				EA62C3B219642CB60051708C /* CDYLocationSimulator.podspec in Resources */,
 				EA62C39519642A230051708C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +457,7 @@
 				EA62C3AD19642A230051708C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA62C3AE19642A230051708C /* Build configuration list for PBXNativeTarget "CDYLocationSimulatorTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +466,7 @@
 				EA62C3B019642A230051708C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
