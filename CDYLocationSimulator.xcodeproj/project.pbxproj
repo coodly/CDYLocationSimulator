@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA62C38319642A230051708C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62C38219642A220051708C /* Foundation.framework */; };
+		EA62C38519642A230051708C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62C38419642A230051708C /* CoreGraphics.framework */; };
+		EA62C38719642A230051708C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62C38619642A230051708C /* UIKit.framework */; };
+		EA62C38D19642A230051708C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA62C38B19642A230051708C /* InfoPlist.strings */; };
+		EA62C38F19642A230051708C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62C38E19642A230051708C /* main.m */; };
+		EA62C39319642A230051708C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62C39219642A230051708C /* AppDelegate.m */; };
+		EA62C39519642A230051708C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA62C39419642A230051708C /* Images.xcassets */; };
+		EA62C39C19642A230051708C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62C39B19642A230051708C /* XCTest.framework */; };
+		EA62C39D19642A230051708C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62C38219642A220051708C /* Foundation.framework */; };
+		EA62C39E19642A230051708C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62C38619642A230051708C /* UIKit.framework */; };
+		EA62C3A619642A230051708C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA62C3A419642A230051708C /* InfoPlist.strings */; };
+		EA62C3A819642A230051708C /* CDYLocationSimulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62C3A719642A230051708C /* CDYLocationSimulatorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA62C39F19642A230051708C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA62C37719642A220051708C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA62C37E19642A220051708C;
+			remoteInfo = CDYLocationSimulator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA62C37F19642A220051708C /* CDYLocationSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDYLocationSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA62C38219642A220051708C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA62C38419642A230051708C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA62C38619642A230051708C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA62C38A19642A230051708C /* CDYLocationSimulator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CDYLocationSimulator-Info.plist"; sourceTree = "<group>"; };
+		EA62C38C19642A230051708C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA62C38E19642A230051708C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA62C39019642A230051708C /* CDYLocationSimulator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDYLocationSimulator-Prefix.pch"; sourceTree = "<group>"; };
+		EA62C39119642A230051708C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA62C39219642A230051708C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA62C39419642A230051708C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EA62C39A19642A230051708C /* CDYLocationSimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDYLocationSimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA62C39B19642A230051708C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EA62C3A319642A230051708C /* CDYLocationSimulatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CDYLocationSimulatorTests-Info.plist"; sourceTree = "<group>"; };
+		EA62C3A519642A230051708C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA62C3A719642A230051708C /* CDYLocationSimulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDYLocationSimulatorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA62C37C19642A220051708C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA62C38519642A230051708C /* CoreGraphics.framework in Frameworks */,
+				EA62C38719642A230051708C /* UIKit.framework in Frameworks */,
+				EA62C38319642A230051708C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA62C39719642A230051708C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA62C39C19642A230051708C /* XCTest.framework in Frameworks */,
+				EA62C39E19642A230051708C /* UIKit.framework in Frameworks */,
+				EA62C39D19642A230051708C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA62C37619642A220051708C = {
+			isa = PBXGroup;
+			children = (
+				EA62C38819642A230051708C /* CDYLocationSimulator */,
+				EA62C3A119642A230051708C /* CDYLocationSimulatorTests */,
+				EA62C38119642A220051708C /* Frameworks */,
+				EA62C38019642A220051708C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA62C38019642A220051708C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA62C37F19642A220051708C /* CDYLocationSimulator.app */,
+				EA62C39A19642A230051708C /* CDYLocationSimulatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA62C38119642A220051708C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA62C38219642A220051708C /* Foundation.framework */,
+				EA62C38419642A230051708C /* CoreGraphics.framework */,
+				EA62C38619642A230051708C /* UIKit.framework */,
+				EA62C39B19642A230051708C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA62C38819642A230051708C /* CDYLocationSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				EA62C39119642A230051708C /* AppDelegate.h */,
+				EA62C39219642A230051708C /* AppDelegate.m */,
+				EA62C39419642A230051708C /* Images.xcassets */,
+				EA62C38919642A230051708C /* Supporting Files */,
+			);
+			path = CDYLocationSimulator;
+			sourceTree = "<group>";
+		};
+		EA62C38919642A230051708C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA62C38A19642A230051708C /* CDYLocationSimulator-Info.plist */,
+				EA62C38B19642A230051708C /* InfoPlist.strings */,
+				EA62C38E19642A230051708C /* main.m */,
+				EA62C39019642A230051708C /* CDYLocationSimulator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA62C3A119642A230051708C /* CDYLocationSimulatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA62C3A719642A230051708C /* CDYLocationSimulatorTests.m */,
+				EA62C3A219642A230051708C /* Supporting Files */,
+			);
+			path = CDYLocationSimulatorTests;
+			sourceTree = "<group>";
+		};
+		EA62C3A219642A230051708C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA62C3A319642A230051708C /* CDYLocationSimulatorTests-Info.plist */,
+				EA62C3A419642A230051708C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA62C37E19642A220051708C /* CDYLocationSimulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA62C3AB19642A230051708C /* Build configuration list for PBXNativeTarget "CDYLocationSimulator" */;
+			buildPhases = (
+				EA62C37B19642A220051708C /* Sources */,
+				EA62C37C19642A220051708C /* Frameworks */,
+				EA62C37D19642A220051708C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CDYLocationSimulator;
+			productName = CDYLocationSimulator;
+			productReference = EA62C37F19642A220051708C /* CDYLocationSimulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA62C39919642A230051708C /* CDYLocationSimulatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA62C3AE19642A230051708C /* Build configuration list for PBXNativeTarget "CDYLocationSimulatorTests" */;
+			buildPhases = (
+				EA62C39619642A230051708C /* Sources */,
+				EA62C39719642A230051708C /* Frameworks */,
+				EA62C39819642A230051708C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA62C3A019642A230051708C /* PBXTargetDependency */,
+			);
+			name = CDYLocationSimulatorTests;
+			productName = CDYLocationSimulatorTests;
+			productReference = EA62C39A19642A230051708C /* CDYLocationSimulatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA62C37719642A220051708C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Coodly LLC";
+				TargetAttributes = {
+					EA62C39919642A230051708C = {
+						TestTargetID = EA62C37E19642A220051708C;
+					};
+				};
+			};
+			buildConfigurationList = EA62C37A19642A220051708C /* Build configuration list for PBXProject "CDYLocationSimulator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EA62C37619642A220051708C;
+			productRefGroup = EA62C38019642A220051708C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA62C37E19642A220051708C /* CDYLocationSimulator */,
+				EA62C39919642A230051708C /* CDYLocationSimulatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA62C37D19642A220051708C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA62C38D19642A230051708C /* InfoPlist.strings in Resources */,
+				EA62C39519642A230051708C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA62C39819642A230051708C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA62C3A619642A230051708C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA62C37B19642A220051708C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA62C39319642A230051708C /* AppDelegate.m in Sources */,
+				EA62C38F19642A230051708C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA62C39619642A230051708C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA62C3A819642A230051708C /* CDYLocationSimulatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA62C3A019642A230051708C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA62C37E19642A220051708C /* CDYLocationSimulator */;
+			targetProxy = EA62C39F19642A230051708C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA62C38B19642A230051708C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA62C38C19642A230051708C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA62C3A419642A230051708C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA62C3A519642A230051708C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA62C3A919642A230051708C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA62C3AA19642A230051708C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA62C3AC19642A230051708C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CDYLocationSimulator/CDYLocationSimulator-Prefix.pch";
+				INFOPLIST_FILE = "CDYLocationSimulator/CDYLocationSimulator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EA62C3AD19642A230051708C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CDYLocationSimulator/CDYLocationSimulator-Prefix.pch";
+				INFOPLIST_FILE = "CDYLocationSimulator/CDYLocationSimulator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EA62C3AF19642A230051708C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CDYLocationSimulator.app/CDYLocationSimulator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CDYLocationSimulator/CDYLocationSimulator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CDYLocationSimulatorTests/CDYLocationSimulatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EA62C3B019642A230051708C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CDYLocationSimulator.app/CDYLocationSimulator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CDYLocationSimulator/CDYLocationSimulator-Prefix.pch";
+				INFOPLIST_FILE = "CDYLocationSimulatorTests/CDYLocationSimulatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA62C37A19642A220051708C /* Build configuration list for PBXProject "CDYLocationSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA62C3A919642A230051708C /* Debug */,
+				EA62C3AA19642A230051708C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA62C3AB19642A230051708C /* Build configuration list for PBXNativeTarget "CDYLocationSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA62C3AC19642A230051708C /* Debug */,
+				EA62C3AD19642A230051708C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA62C3AE19642A230051708C /* Build configuration list for PBXNativeTarget "CDYLocationSimulatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA62C3AF19642A230051708C /* Debug */,
+				EA62C3B019642A230051708C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA62C37719642A220051708C /* Project object */;
+}
