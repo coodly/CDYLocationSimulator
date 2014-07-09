@@ -16,10 +16,20 @@
 
 #import "CDYLocation.h"
 
+@interface CDYLocation ()
+
+@property (nonatomic, strong) NSDate *myTimestamp;
+
+@end
+
 @implementation CDYLocation
 
 - (NSDate *)timestamp {
-    return [NSDate date];
+    if (!self.myTimestamp) {
+        [self setMyTimestamp:[NSDate date]];
+    }
+
+    return self.myTimestamp;
 }
 
 @end
